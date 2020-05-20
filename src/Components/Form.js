@@ -14,7 +14,7 @@ function Form({ search, fetchEmojis, handleInput }) {
 						id='inpt_search'
 					/>
 				</label>
-				<p>Hover and Type to Search.</p>
+				<h3>Hover and Type to Search.</h3>
 			</form>
 		</div>
 	);

@@ -28,3 +28,18 @@
 		opacity: 1;
 	}
 }
+.row {
+	display: flex;
+	align-content: space-between;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.list {
+	line-height: 1.5;
+	margin: 20px;
+	padding: 0.75em 1em;
+	border-radius: 6px;
+	font-size: 1.3rem;
+	border: 1px solid #f2a365;
+	width: max-content;
+}
