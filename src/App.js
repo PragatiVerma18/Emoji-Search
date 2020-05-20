@@ -17,8 +17,7 @@ class App extends Component {
 		};
 	}
 	fetchAll = (e) => {
-		const token = 'caeb9ad508435bb320ed55379c2767fb9eb4e469';
-		const url = `https://emoji-api.com/emojis?access_key=${token}`;
+		const url = process.env.REACT_APP_URL_ALL;
 		fetch(url)
 			.then((res) => res.json())
 			.then((data) => {
@@ -38,9 +37,8 @@ class App extends Component {
 	fetchEmojis = (e) => {
 		e.preventDefault();
 		this.setState({ loading: true });
-		const token = 'caeb9ad508435bb320ed55379c2767fb9eb4e469';
 		const search = this.state.search;
-		const url = `https://emoji-api.com/emojis?search=${search}&access_key=${token}`;
+		const url = `process.env.REACT_APP_URL_SEARCH=${search}&access_key=process.env.REACT_APP_TOKEN`;
 		fetch(url)
 			.then((res) => res.json())
 			.then((data) => {
